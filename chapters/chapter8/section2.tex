@@ -1,0 +1,170 @@
+\section{Μερικές Απλές Βελτιώσεις}
+
+\subsection{Απλούστευση του SpaceBackground}
+Η κλάση που έχουμε γράψει για το φόντο είναι πιο πολύπλοκη από όσο χρειάζεται!
+Αποφασίσαμε λοιπόν να την απλουστεύσουμε καθώς το φόντο πάντοτε ξεκινάει την
+κύλιση του από την αρχή του παραθύρου, το γνωστό [0,0] και καταλήγει επίσης
+στο {\tt screenheight}:
+
+\begin{minted}[bgcolor=bg, linenos, frame=lines, framesep=10pt]{python}
+class SpaceBackground:
+  def __init__(self, screenheight, imagefile):
+    self.shape = pygame.image.load(imagefile)
+    self.coord = [0,0]
+    self.coord2 = [0, -screenheight]
+    self.y_original = self.coord[1]
+    self.y2_original = self.coord2[1]
+\end{minted}
+
+Και στο κύριο πρόγραμμα μας πλέον η μόνη παράμετρος που περνάμε όσο αφορά τις συντεταγμένες είναι το {\tt screenheight}:
+
+\begin{minted}[bgcolor=bg, frame=lines, framesep=10pt]{python}
+  StarField = SpaceBackground(screenheight, "stars.jpg")
+\end{minted}
+
+\subsection{Βελτιστοποίηση Εμφάνισης της Βολής Laser}
+Παρατηρήσατε και εσείς φυσικά ότι η βολή του Laser δεν ξεκινάει ακριβώς από τη μύτη του διαστημοπλοίου, αλλά έχει offset λίγες γραμμές. Λογικό καθώς γύρω από το διαστημόπλοιο μας βρίσκεται ένα αόρατο κουτάκι που το περιέχει και η βολή εμφανίζεται από την πάνω γραμμή του -- που δεν συμπίπτει αναγκαστικά με τη μύτη του κανονιού μας. Θα πρέπει να εμφανίσουμε το Laser από λίγο πιο κάτω.
+
+Για να το κάνουμε αυτό με σωστό τρόπο\texttrademark, θα δώσουμε μια επιπλέον παράμετρο {\tt voffset} (vertical offset) στο Laser μας. Μη ξεχνάτε ότι θα το χρησιμοποιήσουμε και για τους εξωγήινους και εκεί τα πράγματα ίσως είναι διαφορετικά! Ο νέος μας constructor θα είναι κάπως έτσι:
+
+\begin{minted}[bgcolor=bg, linenos, frame=lines, framesep=10pt]{python}
+class Laser:
+  def __init__(self, coord, color, size, speed, refline, voffset):
+    self.x1 = coord[0]
+    self.y1 = coord[1] + voffset
+    self.size = size
+    self.color = color
+    self.speed = speed
+    self.refline = refline
+\end{minted}
+
+Και φυσικά η κλήση που κάνουμε διαμορφώνεται κάπως έτσι:
+
+\begin{minted}[bgcolor=bg, frame=lines, framesep=10pt]{python}
+    shot = Laser((self.rect[0]+self.ship_midwidth, self.rect[1]),
+                  self.firecolor,self.shotlength,self.firespeed,self.rect[1],15)
+\end{minted}
+
+Όπου φυσικά το μαγικό 15 είναι το offset που επέλεξα για το διαστημόπλοιο μας. Αν θέλουμε να είμαστε σωστοί βέβαια αυτό θα το βάλουμε σε μια μεταβλητή self στον constructor. Θα μου πείτε τώρα γιατί να μην κάνουμε κάτι αντίστοιχο και για το {\tt midwidth}. Για σκεφτείτε το λίγο και ασχοληθείτε το απόγευμα, άντε μπράβο!
+
+\subsection{Δημιουργία Συνάρτησης Fire στο SpaceCraft Class}
+
+Σκοπός μας εδώ είναι να μεταφέρουμε τον ήχο από τη γονική συνάρτηση ώστε να εξασφαλίσουμε ότι μόνο το δικό μας (δυνατό) Laser θα ακούγεται (και όχι οι βολές των κακόμοιρων, αδύναμων και χαμένων από χέρι εξωγήινων). Και ωραία, πήγατε στο {\tt Fire} του {\tt Craft} class και βγάλατε το {\tt laser.play()}.  Ποια θα είναι η συνάρτηση στο δικό μας {\tt SpaceCraft} class;
+
+\begin{minted}[bgcolor=bg, frame=lines, framesep=10pt]{python}
+  def Fire(self):
+    laser.play()
+    return super(SpaceCraft,self).Fire()
+\end{minted}
+
+Υπάρχει μόνο ένα πονηρό σημείο: Φυσικά και θα καλέσουμε με την {\tt super} τη γονική συνάρτηση. Αλλά μη ξεχνάτε ότι αυτή επιστρέφει ένα αντικείμενο τύπου {\tt Laser} το οποίο θα χρησιμοποιήσουμε αργότερα. Αν την καλέσετε απλώς έτσι:
+
+\begin{minted}[bgcolor=bg,  frame=lines, framesep=10pt]{python}
+    super(SpaceCraft,self).Fire()
+\end{minted}
+
+η δική μας {\tt Fire} θα επιστρέψει το\ldots{} τίποτα. Θα προσθέσετε μετά ένα αντικείμενο του τύπου\ldots{} τίποτα στη λίστα {\tt firelist} που περιέχει τις βολές. Αυτό δεν είναι καθόλου μα καθόλου καλό, γιατί δεν υπάρχει συνάρτηση που να κινεί αντικείμενα τύπου ``τίποτα''! Θα δείτε την python να παραπονιέται με το παρακάτω μήνυμα:
+%
+\begin{verbatim}
+Traceback (most recent call last):
+  File "pygame-invaders.py", line 210, in <module>
+    theshot.Move(time)
+AttributeError: 'NoneType' object has no attribute 'Move'
+\end{verbatim}
+%
+Θα μπορούσατε φυσικά να καλέσετε την {\tt Fire} και έτσι:
+
+\begin{minted}[bgcolor=bg, linenos, frame=lines, framesep=10pt]{python}
+  def Fire(self):
+    laser.play()
+    theshot = super(SpaceCraft,self).Fire()
+    return theshot
+\end{minted}
+
+Αλλά είναι περιττό να αποθηκεύουμε την τιμή που δεν πρόκειται να χρησιμοποιήσουμε παρά μόνο για το {\tt return} αμέσως μετά.
+
+\section{Έρχονται οι\ldots{} Εξωγήινοι}
+
+Έχουμε κίνηση, Laser, scrolling background\ldots{} Καιρός να βάλουμε και τους εξωγήινους στο παιχνίδι, δεν νομίζετε; Όχι τίποτα άλλο να έχουμε κάτι να πυροβολάμε άμεσα στο επόμενο κεφάλαιο. Πάμε λοιπόν να δούμε πως θα τους εμφανίσουμε.
+
+Όπως είχαμε πει στην αρχική περιγραφή του παιχνιδιού, οι εξωγήινοι θα έρχονται σε κύματα. Καθώς ξεμπερδεύουμε με το ένα κύμα θα εμφανίζεται το επόμενο. Μια απλή σκέψη είναι φυσικά το κάθε κύμα να έχει ένα συγκεκριμένο αριθμό από εξωγήινους. Καθένας θα εμφανίζεται σε μια τυχαία θέση στην οθόνη μας και θα κινείται με σχετικά τυχαίες ταχύτητες, κάνοντας bounce στα όρια της οθόνης (σας θυμίζει κάτι;) Με βάση τα παραπάνω, μπορούμε να γράψουμε εύκολα μια αρχική υλοποίηση για την κλάση τους.
+
+\begin{minted}[bgcolor=bg, linenos, frame=lines, framesep=10pt]{python}
+class Alien(Craft):
+  def __init__(self, imagefile, coord, speed_x, speed_y):
+    super(Alien, self).__init__(imagefile, coord)
+    self.speed_x = speed_x
+    self.speed_y = speed_y
+    self.shot_height = 10
+    self.firebaseline = self.ship_height
+    self.firecolor=(255,255,0)
+    self.firespeed = 200
+  def Move(self, time):
+    super(Alien,self).Move(self.speed_x, self.speed_y,time)
+    if self.rect[0] &gt;= 440 or self.rect[0] &lt;= 10:
+      self.speed_x = -self.speed_x
+    if self.rect[1] &lt;= 10 or self.rect[1] &gt;= 440:
+      self.speed_y = -self.speed_y
+\end{minted}
+
+Τι παραπάνω έχει το {\tt Alien} class από εμάς; Παρατηρήστε ότι ο constructor έχει από την αρχή τιμές για τις ταχύτητες του εξωγήινου και στους δύο άξονες -- όπως είπαμε οι εξωγήινοι δεν είναι πολύ έξυπνοι. Ξεκινάνε με τυχαίες ταχύτητες τις οποίες θα παράγουμε στον κύριο βρόχο του παιχνιδιού. Δείτε τι γίνεται στη συνάρτηση {\tt Move}. Όταν φτάσουν σε κάποια όρια της οθόνης (τα οποία {\bf κακώς} είναι hardwired στον κώδικα, κάτι που θα διορθώσετε) απλώς αλλάζουν φορά κίνησης (εμ, αυτό το bouncing ball\ldots{}). Εμείς βέβαια θα κανονίσουμε να έρχονται γενικά προς το μέρος μας με τις αντίστοιχες εντολές στον κύριο βρόχο.
+
+Πριν το {\tt while} όμως, θα πρέπει να ετοιμάσουμε τις εικόνες που θα χρησιμοποιηθούν. Οι εξωγήινοι είναι πολλών ειδών:
+
+\begin{minted}[bgcolor=bg,  frame=lines, framesep=10pt]{python}
+  alienimage=('alien1.png','alien2.png','alien3.png','alien4.png','alien5.png')
+\end{minted}
+
+Ορίζουμε και μια μεταβλητή που μας επιτρέπει να καθορίσουμε πόσοι εξωγήινοι θα υπάρχουν σε κάθε κύμα:
+
+\begin{minted}[bgcolor=bg,  frame=lines, framesep=10pt]{python}
+  numofaliens = 8
+\end{minted}
+
+Όπως κάναμε με τις βολές Laser, θα αποθηκεύουμε τα αντικείμενα τύπου {\tt Alien} που θα φτιάχνουμε σε μια λίστα, που αρχικά, έξω από το βρόχο, θα είναι κενή:
+
+\begin{minted}[bgcolor=bg,  frame=lines, framesep=10pt]{python}
+  AlienShips = []
+\end{minted}
+
+Μέσα στο βρόχο τώρα, θα χρησιμοποιήσουμε μια εντολή for για να δημιουργήσουμε το κύμα των χαζοεξωγήινων. Μπορείτε να βάλετε τις παρακάτω εντολές ακριβώς κάτω από την γραμμή {\tt time} (προσέξτε το indentation):
+
+\begin{minted}[bgcolor=bg, linenos, frame=lines, framesep=10pt]{python}
+    if not AlienShips:
+      # AlienShips empty means we need to create new 'wave'
+      AlienShips = [ Alien(alienimage[randint(0,len(alienimage)-1)],
+                     [randint(20,screenwidth-80),randint(20,screenheight-140)],
+                     randint(100,150), randint(100,150))
+                     for i in range(0,numofaliens) ]
+\end{minted}
+
+Αν ψάχνετε το {\tt for}, είναι λίγο κρυμμένο: Χρησιμοποιήσαμε μια δυνατότητα της Python που ονομάζεται \emph{list comprehension} και μας επιτρέπει πολύ εύκολα να δημιουργήσουμε μια λίστα ενσωματώνοντας την εντολή {\tt for} με τον τρόπο που βλέπετε παραπάνω. Θα μπορούσαμε βέβαια να το γράψουμε με τον κλασικό τρόπο:
+
+\begin{minted}[bgcolor=bg, linenos, frame=lines, framesep=10pt]{python}
+      for i in range(0,numofaliens):
+        Alienships.append(Alien(alienimage[randint(0,len(alienimage)-1)],
+                          [randint(20,screenwidth-80),
+                           randint(20,screenheight-140)],randint(100,150),
+                           randint(100,150)))
+\end{minted}
+
+Όπως παρατηρήσατε, χρησιμοποιούμε την {\tt randint} για να παράγουμε αρχικές θέσεις και ταχύτητες για τους εξωγήινους. Οι τιμές έχουν επιλεγεί κατάλληλα για να μην πέφτουν εκτός οθόνης αλλά και να μη εμφανιστεί κανείς πάνω στο διαστημόπλοιο μας στο κάτω μέρος της οθόνης.
+
+Γιατί υπάρχει το {\tt if not AlienShips}; Αν η λίστα {\tt AlienShips} είναι άδεια, μπορεί να συμβαίνουν δύο πράγματα:
+%
+\begin{itemize}
+\item[-] Είτε μόλις ξεκινήσαμε το παιχνίδι, οπότε αυτό είναι το πρώτο κύμα εξωγήινων
+\item[-] Είτε μόλις έχουμε\ldots{} ξεμπερδέψει με όλους τους εξωγήινους του προηγούμενου κύματος
+\end{itemize}
+%
+Σε κάθε περίπτωση, σημαίνει ότι δεν έχουμε εξωγήινους στην οθόνη, άρα σίγουρα πρέπει να δημιουργήσουμε το νέο κύμα! Και ναι, αυτό είναι όλο το θέμα με την δημιουργία των εξωγήινων.
+
+Φυσικά, οι εξωγήινοι κάπου πρέπει να φανούν και να κινηθούν. Οπότε θα έχουμε και το παρακάτω {\tt for}. Προσέξτε ότι πρέπει να είναι μετά το {\tt Show} για το κινούμενο φόντο μας:
+
+\begin{minted}[bgcolor=bg,  frame=lines, framesep=10pt]{python}
+    For AlienShip in AlienShips:
+      AlienShip.Show(screen)
+      AlienShip.Move(time)
+\end{minted}
+
+Και τώρα μπορείτε να περάσετε μερικές ώρες ευχάριστα πυροβολώντας εξωγήινους που\ldots{} δεν σκοτώνονται. Από την άλλη δεν σας πυροβολούν κιόλας. Χαρείτε αυτή την προσωρινή ανακωχή, γιατί στο επόμενο κεφάλαιο, θα διακοπεί απότομα!

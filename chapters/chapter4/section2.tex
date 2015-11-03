@@ -1,0 +1,65 @@
+\section{Τα Βλέπω Διπλά! Δύο Bouncing Balls}
+
+Πως θα μετατρέψετε το bouncing ball ώστε να έχει δύο μπάλες; Ελπίζουμε να μη σας φαίνεται δύσκολο. Ας δούμε μια απλοϊκή λύση. Κάτω από την γραμμή:
+
+\begin{minted}[bgcolor=bg, frame=lines, framesep=10pt]{python}
+xspeed,yspeed = 50.0 , 50.0
+\end{minted}
+
+προσθέστε:
+
+\begin{minted}[bgcolor=bg, frame=lines, framesep=10pt]{python}
+x2,y2 = 50.0, 50.0
+xspeed2,yspeed2= 30,30
+\end{minted}
+
+Βάζουμε λίγο διαφορετική ταχύτητα για να καταλαβαίνουμε ποια μπάλα είναι η
+πρώτη και ποια η δεύτερη. Επίσης ξεκινάμε και από άλλη αρχική θέση. Δίνουμε τώρα όλο τον κύριο βρόχο του προγράμματος (αφαιρέσαμε τα αρχικά σχόλια για συντομία):
+
+\begin{minted}[bgcolor=bg, linenos,frame=lines, framesep=10pt]{python}
+  endprogram = False
+  while not endprogram:
+    screen.fill(surfacecolor)
+    screen.blit(ball, (x, y))
+    screen.blit(ball, (x2,y2))
+    time = clock.tick()
+    thetext = textfont.render(str(1000/time), True, (255,0,0),(255,255,0))
+    screen.blit(thetext,(0,0))
+    time = time / 1000.0
+    distance_x = time * xspeed
+    distance_y = time * yspeed
+    distance_x2 = time * xspeed2
+    distance_y2 = time * yspeed2
+    x = x + distance_x
+    y = y + distance_y
+    x2 = x2 + distance_x2
+    y2 = y2 + distance_y2
+    if (x > (640.0-ballwidth) or x<=0.0):
+      xspeed = -xspeed
+    if (y > (480.0-ballheight) or y<=0.0):
+      yspeed = -yspeed
+\end{minted}
+
+\begin{minted}[bgcolor=bg, firstnumber=22, linenos,frame=lines, framesep=10pt]{python}
+    if (x2 > (640.0-ballwidth) or x2<=0.0):
+      xspeed2 = -xspeed2
+    if (y2 > (480.0-ballheight) or y2<=0.0):
+      yspeed2 = -yspeed2
+
+    pygame.display.update()
+    endprogram = getQuit()
+
+  pygame.quit()
+  exit()
+\end{minted}
+
+Είναι εύκολο, αλλά είναι και κακογραμμένο! Γιατί, αν το να βάλουμε
+μερικές ακόμα μεταβλητές για να φτιάξουμε μια δεύτερη μπάλα είναι απλό, τι
+θα λέγατε αν σας έλεγα να το φτιάξετε για 20 μπάλες; ή για 100 μπάλες;
+Θα πρέπει σίγουρα να αλλάξετε τρόπο σκέψης! Και φυσικά ο αντικειμενοστραφής
+προγραμματισμός (που θα δούμε στο επόμενο κεφάλαιο) θα μας βοηθήσει.
+
+Α, και τώρα φυσικά που θα το τρέξετε, θα δείτε και ποια μπάλα περνάει πάνω
+από την άλλη. Και το αποτέλεσμα είναι απόλυτα λογικό.
+
+Κατεβάστε τα προγράμματα αυτού του κεφαλαίου: Hello Pygame: \url{http://www.freebsdworld.gr/files/hello-pygame.zip}, Colorbars: \url{http://www.freebsdworld.gr/files/colorbars.zip}, Bouncing Ball: \url{http://www.freebsdworld.gr/files/bouncing.zip}
