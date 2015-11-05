@@ -1,8 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{if} \PYG{n}{tries} \PYG{o}{==} \PYG{l+m+mi}{1}\PYG{p}{:}
-  \PYG{k}{print} \PYG{l+s}{\PYGZdq{}Beginners luck!\PYGZdq{}}
-\PYG{k}{if} \PYG{p}{(}\PYG{n}{tries} \PYG{o}{\PYGZlt{}=} \PYG{l+m+mi}{5} \PYG{o+ow}{and} \PYG{n}{tries} \PYG{o}{!=} \PYG{l+m+mi}{1}\PYG{p}{):}
-  \PYG{k}{print} \PYG{l+s}{\PYGZdq{}Είσαι γρήγορος!\PYGZdq{}}
-\PYG{k}{if} \PYG{n}{tries} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{5}\PYG{p}{:}
-  \PYG{k}{print} \PYG{l+s}{\PYGZdq{}Η γιαγιά μου παίζει πιο καλά!\PYGZdq{}}
-\end{Verbatim}

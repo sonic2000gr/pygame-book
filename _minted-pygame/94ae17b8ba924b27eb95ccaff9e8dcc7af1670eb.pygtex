@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-  \PYG{n}{ballwidth} \PYG{o}{=} \PYG{n}{ball}\PYG{o}{.}\PYG{n}{get\PYGZus{}width}\PYG{p}{()}
-  \PYG{n}{ballheight} \PYG{o}{=} \PYG{n}{ball}\PYG{o}{.}\PYG{n}{get\PYGZus{}height}\PYG{p}{()}
-\end{Verbatim}

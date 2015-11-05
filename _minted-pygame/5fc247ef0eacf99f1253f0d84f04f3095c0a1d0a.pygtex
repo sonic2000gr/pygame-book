@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-  \PYG{n}{destinations} \PYG{o}{=} \PYG{n}{moves} \PYG{p}{[}\PYG{n}{room}\PYG{p}{]}
-\end{Verbatim}

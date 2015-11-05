@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-  \PYG{k}{def} \PYG{n+nf}{Fire}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
-    \PYG{n}{laser}\PYG{o}{.}\PYG{n}{play}\PYG{p}{()}
-    \PYG{n}{theshot} \PYG{o}{=} \PYG{n+nb}{super}\PYG{p}{(}\PYG{n}{SpaceCraft}\PYG{p}{,}\PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{o}{.}\PYG{n}{Fire}\PYG{p}{()}
-    \PYG{k}{return} \PYG{n}{theshot}
-\end{Verbatim}

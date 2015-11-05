@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{animal} \PYG{o}{=} \PYG{n}{mammal}\PYG{p}{()}
-\PYG{n}{animal}\PYG{o}{.}\PYG{n}{speak}\PYG{p}{()}
-\end{Verbatim}

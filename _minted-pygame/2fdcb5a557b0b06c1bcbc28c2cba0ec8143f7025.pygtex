@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-  \PYG{k}{def} \PYG{n+nf}{Show}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{surface}\PYG{p}{):}
-    \PYG{n}{imageindex} \PYG{o}{=} \PYG{l+m+mi}{0}
-    \PYG{n+nb}{super}\PYG{p}{(}\PYG{n}{Alien}\PYG{p}{,}\PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{o}{.}\PYG{n}{Show}\PYG{p}{(}\PYG{n}{surface}\PYG{p}{,}\PYG{n}{imageindex}\PYG{p}{)}
-\end{Verbatim}

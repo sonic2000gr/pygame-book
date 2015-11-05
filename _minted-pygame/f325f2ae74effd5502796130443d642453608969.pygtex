@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-  \PYG{n}{SpaceShip} \PYG{o}{=} \PYG{n}{SpaceCraft}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}spaceship2.png\PYGZdq{}}\PYG{p}{,}\PYG{n}{spaceship\PYGZus{}pos}\PYG{p}{)}
-\end{Verbatim}

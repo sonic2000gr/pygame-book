@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{class} \PYG{n+nc}{SpaceBackground}\PYG{p}{:}
-  \PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{coord}\PYG{p}{,} \PYG{n}{coord2}\PYG{p}{,} \PYG{n}{imagefile}\PYG{p}{):}
-\end{Verbatim}

@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-  \PYG{n}{screen} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{display}\PYG{o}{.}\PYG{n}{set\PYGZus{}mode}\PYG{p}{(}\PYG{n}{windowsize}\PYG{p}{,} \PYG{n}{DOUBLEBUF}\PYG{p}{)}
-\end{Verbatim}

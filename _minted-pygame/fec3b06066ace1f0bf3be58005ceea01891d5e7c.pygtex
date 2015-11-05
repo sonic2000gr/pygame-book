@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-  \PYG{n}{spaceship\PYGZus{}low} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{)}
-  \PYG{n}{spaceship\PYGZus{}high} \PYG{o}{=} \PYG{p}{(}\PYG{n}{screenwidth}\PYG{p}{,} \PYG{n}{screenheight}\PYG{p}{)}
-  \PYG{n}{SpaceShip} \PYG{o}{=} \PYG{n}{SpaceCraft}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}spaceship2.png\PYGZdq{}}\PYG{p}{,}\PYG{n}{spaceship\PYGZus{}pos}\PYG{p}{,} \PYG{n}{spaceship\PYGZus{}low}\PYG{p}{,} \PYG{n}{spaceship\PYGZus{}high}\PYG{p}{)}
-\end{Verbatim}

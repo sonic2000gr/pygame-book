@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{balls} \PYG{o}{=} \PYG{p}{[} \PYG{p}{[}\PYG{l+m+mf}{100.0}\PYG{p}{,} \PYG{l+m+mf}{100.0}\PYG{p}{,} \PYG{l+m+mf}{50.0}\PYG{p}{,}\PYG{l+m+mf}{50.0}\PYG{p}{],}
-          \PYG{p}{[}\PYG{l+m+mf}{50.0}\PYG{p}{,} \PYG{l+m+mf}{50.0}\PYG{p}{,} \PYG{l+m+mf}{30.0}\PYG{p}{,} \PYG{l+m+mf}{30.0}\PYG{p}{],} \PYG{o}{...}\PYG{p}{]}
-\end{Verbatim}

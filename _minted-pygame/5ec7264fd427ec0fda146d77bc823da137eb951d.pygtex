@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{slot\PYGZus{}images} \PYG{o}{=}   \PYG{p}{(}\PYG{l+s}{\PYGZsq{}lemon.jpg\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}bar.jpg\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}cherry.jpg\PYGZsq{}}\PYG{p}{,}
-                 \PYG{l+s}{\PYGZsq{}bell.jpg\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}raspberry.jpg\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}seven.jpg\PYGZsq{}}\PYG{p}{)}
-\PYG{n}{slotmachine} \PYG{o}{=} \PYG{n}{Spinner}\PYG{p}{(}\PYG{n}{slot\PYGZus{}images}\PYG{p}{)}
-\end{Verbatim}

@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{class} \PYG{n+nc}{Laser}\PYG{p}{:}
-  \PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{coord}\PYG{p}{,} \PYG{n}{color}\PYG{p}{,} \PYG{n}{size}\PYG{p}{,} \PYG{n}{speed}\PYG{p}{,} \PYG{n}{refline}\PYG{p}{):}
-\end{Verbatim}

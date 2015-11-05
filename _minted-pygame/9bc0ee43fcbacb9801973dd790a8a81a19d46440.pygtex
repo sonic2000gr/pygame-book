@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{laser} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{mixer}\PYG{o}{.}\PYG{n}{Sound}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}laser.wav\PYGZdq{}}\PYG{p}{)}
-\end{Verbatim}

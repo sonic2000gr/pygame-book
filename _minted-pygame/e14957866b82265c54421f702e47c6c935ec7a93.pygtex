@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-  \PYG{k}{def} \PYG{n+nf}{Move}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{speed\PYGZus{}x}\PYG{p}{,} \PYG{n}{speed\PYGZus{}y}\PYG{p}{,} \PYG{n}{time}\PYG{p}{):}
-    \PYG{n+nb}{super}\PYG{p}{(}\PYG{n}{SpaceCraft}\PYG{p}{,}\PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{o}{.}\PYG{n}{Move}\PYG{p}{(}\PYG{n}{speed\PYGZus{}x}\PYG{p}{,} \PYG{n}{speed\PYGZus{}y}\PYG{p}{,} \PYG{n}{time}\PYG{p}{)}
-    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{):}
-      \PYG{k}{if} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rect}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{\PYGZlt{}} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{min\PYGZus{}coord}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]:}
-        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rect}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{min\PYGZus{}coord}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}
-      \PYG{k}{if} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rect}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{\PYGZgt{}} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{max\PYGZus{}coord}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]:}
-        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rect}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{max\PYGZus{}coord}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}
-\end{Verbatim}

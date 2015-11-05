@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{shoppinglist} \PYG{o}{=} \PYG{p}{[} \PYG{l+s}{\PYGZdq{}Cheese\PYGZdq{}} \PYG{p}{,} \PYG{l+s}{\PYGZdq{}Rice\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}Coffee\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}Milk\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}Camba\PYGZdq{}} \PYG{p}{]}
-\end{Verbatim}

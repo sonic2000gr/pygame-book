@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n}{age}\PYG{o}{=}\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}What is your age? \PYGZdq{}}\PYG{p}{)}
-\PYG{n}{What} \PYG{o+ow}{is} \PYG{n}{your} \PYG{n}{age}\PYG{err}{?} \PYG{l+m+mi}{24}
-\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{k}{print} \PYG{n}{age}
-\PYG{l+m+mi}{24}
-\end{Verbatim}

@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-    \PYG{n}{distance\PYGZus{}x} \PYG{o}{=} \PYG{n}{time} \PYG{o}{*} \PYG{n}{xspeed}
-    \PYG{n}{distance\PYGZus{}y} \PYG{o}{=} \PYG{n}{time} \PYG{o}{*} \PYG{n}{yspeed}
-\end{Verbatim}

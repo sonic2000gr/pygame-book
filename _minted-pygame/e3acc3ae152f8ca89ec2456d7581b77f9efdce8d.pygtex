@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-  \PYG{n}{StarField} \PYG{o}{=} \PYG{n}{SpaceBackground}\PYG{p}{(}\PYG{n}{screenheight}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}stars.jpg\PYGZdq{}}\PYG{p}{)}
-\end{Verbatim}

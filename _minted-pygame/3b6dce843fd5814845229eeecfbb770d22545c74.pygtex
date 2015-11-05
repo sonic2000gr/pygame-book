@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k+kn}{import} \PYG{n+nn}{pygame}
-\PYG{k+kn}{from} \PYG{n+nn}{pygame.locals} \PYG{k+kn}{import} \PYG{o}{*}
-\PYG{k+kn}{from} \PYG{n+nn}{sys} \PYG{k+kn}{import} \PYG{n+nb}{exit}
-\end{Verbatim}

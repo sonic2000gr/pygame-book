@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-    \PYG{n}{time} \PYG{o}{=} \PYG{n}{time} \PYG{o}{/} \PYG{l+m+mf}{1000.0}
-\end{Verbatim}

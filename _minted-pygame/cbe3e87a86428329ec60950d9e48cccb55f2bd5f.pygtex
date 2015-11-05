@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{class} \PYG{n+nc}{mammal}\PYG{p}{:}
-  \PYG{k}{def} \PYG{n+nf}{speak}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
-    \PYG{k}{print} \PYG{l+s}{\PYGZdq{}Mpla mpla!\PYGZdq{}}
-  \PYG{k}{def} \PYG{n+nf}{setName}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{name}\PYG{p}{):}
-    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{name} \PYG{o}{=} \PYG{n}{name}
-  \PYG{k}{def} \PYG{n+nf}{getName}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
-    \PYG{k}{return} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{name}
-\end{Verbatim}

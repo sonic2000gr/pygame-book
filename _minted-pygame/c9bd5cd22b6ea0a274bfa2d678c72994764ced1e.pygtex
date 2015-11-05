@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rect}\PYG{o}{.}\PYG{n}{move\PYGZus{}ip}\PYG{p}{(}\PYG{n}{distance\PYGZus{}x}\PYG{p}{,}\PYG{n}{distance\PYGZus{}y}\PYG{p}{)}
-\end{Verbatim}
