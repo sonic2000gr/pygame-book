@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+      \PYG{n}{possiblemoves}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{directions}\PYG{p}{[}\PYG{n}{index}\PYG{p}{])}
+\end{Verbatim}

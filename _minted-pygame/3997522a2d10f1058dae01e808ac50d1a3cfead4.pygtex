@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{screen} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{display}\PYG{o}{.}\PYG{n}{set\PYGZus{}mode}\PYG{p}{((}\PYG{n}{screenwidth}\PYG{p}{,}\PYG{n}{screenheight}\PYG{p}{),} \PYG{n}{DOUBLEBUF}\PYG{p}{,} \PYG{l+m+mi}{32}\PYG{p}{)}
+  \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{display}\PYG{o}{.}\PYG{n}{set\PYGZus{}caption}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Pygame Invaders\PYGZdq{}}\PYG{p}{)}
+  \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{key}\PYG{o}{.}\PYG{n}{set\PYGZus{}repeat}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)}
+\end{Verbatim}

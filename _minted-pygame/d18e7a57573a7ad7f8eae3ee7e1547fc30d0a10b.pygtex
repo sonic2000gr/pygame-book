@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{k}{if} \PYG{n}{key}\PYG{p}{[}\PYG{n}{K\PYGZus{}SPACE}\PYG{p}{]:}
+          \PYG{n}{firelist}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{SpaceShip}\PYG{o}{.}\PYG{n}{Fire}\PYG{p}{())}
+\end{Verbatim}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{name} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Δώσε το όνομα σου: \PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

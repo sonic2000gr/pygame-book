@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{k}{def} \PYG{n+nf}{Show}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{surface}\PYG{p}{):}
+    \PYG{n}{surface}\PYG{o}{.}\PYG{n}{blit}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{coord}\PYG{p}{)}
+    \PYG{n}{surface}\PYG{o}{.}\PYG{n}{blit}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{coord2}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{laserdownlimit} \PYG{o}{=} \PYG{n}{screenheight} \PYG{err}{–} \PYG{l+m+mi}{40}
+\end{Verbatim}

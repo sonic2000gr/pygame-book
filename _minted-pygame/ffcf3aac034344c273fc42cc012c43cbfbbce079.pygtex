@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{x} \PYG{o}{=} \PYG{n}{x} \PYG{o}{+} \PYG{n}{distance\PYGZus{}x}
+    \PYG{n}{y} \PYG{o}{=} \PYG{n}{y} \PYG{o}{+} \PYG{n}{distance\PYGZus{}y}
+\end{Verbatim}

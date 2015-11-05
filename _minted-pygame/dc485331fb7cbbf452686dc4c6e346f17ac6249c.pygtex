@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+      \PYG{k}{if} \PYG{n}{theshot}\PYG{o}{.}\PYG{n}{GoneAbove}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{):}
+        \PYG{n}{firelist}\PYG{o}{.}\PYG{n}{remove}\PYG{p}{(}\PYG{n}{theshot}\PYG{p}{)}
+\end{Verbatim}

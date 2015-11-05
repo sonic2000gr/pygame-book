@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{room} \PYG{o}{=} \PYG{l+m+mi}{0}
+  \PYG{n}{endgame} \PYG{o}{=} \PYG{n+nb+bp}{False}
+  \PYG{k}{while} \PYG{o+ow}{not} \PYG{n}{endgame}\PYG{p}{:}
+    \PYG{k}{print} \PYG{n}{rooms}\PYG{p}{[}\PYG{n}{room}\PYG{p}{]}
+    \PYG{k}{if} \PYG{n}{room} \PYG{o+ow}{in} \PYG{n}{winrooms}\PYG{p}{:}
+      \PYG{k}{print} \PYG{l+s}{\PYGZdq{}Κέρδισες! Η περιπέτεια τελείωσε.\PYGZdq{}}
+      \PYG{n}{endgame} \PYG{o}{=} \PYG{n+nb+bp}{True}
+    \PYG{k}{elif} \PYG{n}{room} \PYG{o+ow}{in} \PYG{n}{lossrooms}\PYG{p}{:}
+      \PYG{k}{print} \PYG{l+s}{\PYGZdq{}Έχασες! Η περιπέτεια τελείωσε.\PYGZdq{}}
+      \PYG{n}{endgame} \PYG{o}{=} \PYG{n+nb+bp}{True}
+    \PYG{k}{else}\PYG{p}{:}
+      \PYG{n}{direction} \PYG{o}{=} \PYG{n}{getInput}\PYG{p}{(}\PYG{n}{moves}\PYG{p}{,} \PYG{n}{room}\PYG{p}{)}
+      \PYG{n}{destinations} \PYG{o}{=} \PYG{n}{moves}\PYG{p}{[}\PYG{n}{room}\PYG{p}{]}
+      \PYG{n}{room} \PYG{o}{=} \PYG{n}{destinations}\PYG{p}{[}\PYG{n}{direction}\PYG{p}{]}
+\end{Verbatim}

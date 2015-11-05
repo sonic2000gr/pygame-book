@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rect} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{Rect}\PYG{p}{(}\PYG{n}{coord}\PYG{p}{,(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{ship\PYGZus{}width}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{ship\PYGZus{}height}\PYG{p}{))}
+\end{Verbatim}

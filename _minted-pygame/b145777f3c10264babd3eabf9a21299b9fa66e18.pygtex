@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{screen}\PYG{o}{.}\PYG{n}{blit}\PYG{p}{(}\PYG{n}{thetext}\PYG{p}{,(}\PYG{n}{textx}\PYG{p}{,}\PYG{n}{texty}\PYG{p}{))}
+    \PYG{n}{endprogram} \PYG{o}{=} \PYG{n}{getQuit}\PYG{p}{()}
+    \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{display}\PYG{o}{.}\PYG{n}{update}\PYG{p}{()}
+
+  \PYG{c}{\PYGZsh{} shutdown pygame and exit program}
+
+  \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{quit}\PYG{p}{()}
+  \PYG{n+nb}{exit}\PYG{p}{()}
+
+\PYG{c}{\PYGZsh{} Start program}
+\PYG{k}{if} \PYG{n}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+  \PYG{n}{main}\PYG{p}{()}
+\end{Verbatim}

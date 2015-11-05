@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{thecat}\PYG{o}{.}\PYG{n}{setName}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Catia\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{thedog}\PYG{o}{.}\PYG{n}{setName}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Lassie\PYGZdq{}}\PYG{p}{)}
+\PYG{k}{print} \PYG{n}{thecat}\PYG{o}{.}\PYG{n}{getName}\PYG{p}{()}
+\PYG{k}{print} \PYG{n}{thedog}\PYG{o}{.}\PYG{n}{getName}\PYG{p}{()}
+\end{Verbatim}

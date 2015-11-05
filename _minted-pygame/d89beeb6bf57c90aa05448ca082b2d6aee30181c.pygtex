@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{shipimages} \PYG{o}{=} \PYG{p}{(}\PYG{l+s}{\PYGZsq{}spaceship2.png\PYGZsq{}}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}spaceship3.png\PYGZsq{}}\PYG{p}{)}
+  \PYG{n}{SpaceShip} \PYG{o}{=} \PYG{n}{SpaceCraft}\PYG{p}{(}\PYG{n}{shipimages}\PYG{p}{,}\PYG{n}{spaceship\PYGZus{}pos}\PYG{p}{,} \PYG{n}{spaceship\PYGZus{}low}\PYG{p}{,} \PYG{n}{spaceship\PYGZus{}high}\PYG{p}{,}\PYG{n}{laser}\PYG{p}{)}
+\end{Verbatim}

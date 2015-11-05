@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{k}{for} \PYG{n}{event} \PYG{o+ow}{in} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{event}\PYG{o}{.}\PYG{n}{get}\PYG{p}{():}
+    \PYG{k}{if} \PYG{n}{event}\PYG{o}{.}\PYG{n}{type} \PYG{o}{==} \PYG{n}{QUIT}\PYG{p}{:}
+      \PYG{n}{endgame} \PYG{o}{=} \PYG{n+nb+bp}{True}
+    \PYG{k}{if} \PYG{n}{event}\PYG{o}{.}\PYG{n}{type} \PYG{o}{==} \PYG{n}{KEYDOWN}\PYG{p}{:}
+      \PYG{n}{keyboardinput} \PYG{o}{=} \PYG{n}{event}\PYG{o}{.}\PYG{n}{key}
+      \PYG{k}{if} \PYG{n}{keyboardinput} \PYG{o}{==} \PYG{n}{K\PYGZus{}q}\PYG{p}{:}
+        \PYG{n}{endgame} \PYG{o}{=} \PYG{n+nb+bp}{True}
+      \PYG{k}{if} \PYG{n}{keyboardinput} \PYG{o}{==} \PYG{n}{K\PYGZus{}SPACE}\PYG{p}{:}
+        \PYG{n}{spacepressed} \PYG{o}{=} \PYG{n+nb+bp}{True}
+\end{Verbatim}

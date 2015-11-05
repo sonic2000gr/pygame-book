@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{for} \PYG{n}{theshot} \PYG{o+ow}{in} \PYG{n}{alienfirelist}\PYG{p}{:}
+      \PYG{n}{theshot}\PYG{o}{.}\PYG{n}{Move}\PYG{p}{(}\PYG{n}{time}\PYG{p}{)}
+      \PYG{n}{theshot}\PYG{o}{.}\PYG{n}{Show}\PYG{p}{(}\PYG{n}{screen}\PYG{p}{)}
+      \PYG{k}{if} \PYG{n}{theshot}\PYG{o}{.}\PYG{n}{GoneBelow}\PYG{p}{(}\PYG{n}{laserdownlimit}\PYG{p}{):}
+        \PYG{n}{alienfirelist}\PYG{o}{.}\PYG{n}{remove}\PYG{p}{(}\PYG{n}{theshot}\PYG{p}{)}
+      \PYG{k}{else}\PYG{p}{:}
+        \PYG{k}{if} \PYG{n}{SpaceShip}\PYG{o}{.}\PYG{n}{rect}\PYG{o}{.}\PYG{n}{collidepoint}\PYG{p}{(}\PYG{n}{theshot}\PYG{o}{.}\PYG{n}{GetXY}\PYG{p}{()):}
+          \PYG{n}{destroyed}\PYG{o}{.}\PYG{n}{play}\PYG{p}{()}
+          \PYG{k}{if} \PYG{n}{theshot} \PYG{o+ow}{in} \PYG{n}{alienfirelist}\PYG{p}{:}
+            \PYG{n}{alienfirelist}\PYG{o}{.}\PYG{n}{remove}\PYG{p}{(}\PYG{n}{theshot}\PYG{p}{)}
+\end{Verbatim}

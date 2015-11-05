@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{print} \PYG{n}{thedog}\PYG{o}{.}\PYG{n}{name}
+\PYG{n}{thecat}\PYG{o}{.}\PYG{n}{name}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Susan\PYGZdq{}}
+\PYG{k}{print} \PYG{n}{thecat}\PYG{o}{.}\PYG{n}{name}
+\end{Verbatim}

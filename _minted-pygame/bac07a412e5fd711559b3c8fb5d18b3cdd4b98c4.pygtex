@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+      \PYG{n}{keyboardinput} \PYG{o}{=} \PYG{n}{event}\PYG{o}{.}\PYG{n}{key}
+\end{Verbatim}

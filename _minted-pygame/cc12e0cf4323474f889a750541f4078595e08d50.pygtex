@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{k}{def} \PYG{n+nf}{Move}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{time}\PYG{p}{):}
+    \PYG{n}{distance} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{speed} \PYG{o}{*} \PYG{n}{time}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{y1} \PYG{o}{+=} \PYG{n}{distance}
+\end{Verbatim}

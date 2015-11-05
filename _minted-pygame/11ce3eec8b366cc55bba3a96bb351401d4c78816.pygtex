@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{SpaceBackground}\PYG{p}{:}
+  \PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{coord}\PYG{p}{,} \PYG{n}{imagefile}\PYG{p}{):}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shape} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{image}\PYG{o}{.}\PYG{n}{load}\PYG{p}{(}\PYG{n}{imagefile}\PYG{p}{)}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{coord} \PYG{o}{=} \PYG{n}{coord}
+
+  \PYG{k}{def} \PYG{n+nf}{Show}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{surface}\PYG{p}{):}
+    \PYG{n}{surface}\PYG{o}{.}\PYG{n}{blit}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{,}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{coord}\PYG{p}{)}
+
+  \PYG{k}{def} \PYG{n+nf}{Scroll}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{speed\PYGZus{}y}\PYG{p}{,} \PYG{n}{time}\PYG{p}{):}
+    \PYG{k}{pass}
+\end{Verbatim}

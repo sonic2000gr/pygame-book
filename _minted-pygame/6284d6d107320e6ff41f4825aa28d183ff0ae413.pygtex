@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZsh{} Sound effects}
+\PYG{k+kn}{import} \PYG{n+nn}{pygame}
+\PYG{k+kn}{from} \PYG{n+nn}{pygame.locals} \PYG{k+kn}{import} \PYG{o}{*}
+\PYG{n}{pygame}\PYG{o}{.}\PYG{n}{init}\PYG{p}{()}
+\PYG{n}{clock} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{time}\PYG{o}{.}\PYG{n}{Clock}\PYG{p}{()}
+\PYG{n}{laser} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{mixer}\PYG{o}{.}\PYG{n}{Sound}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}laser.wav\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{laser}\PYG{o}{.}\PYG{n}{play}\PYG{p}{()}
+\PYG{k}{while} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{mixer}\PYG{o}{.}\PYG{n}{get\PYGZus{}busy}\PYG{p}{():}
+  \PYG{n}{clock}\PYG{o}{.}\PYG{n}{tick}\PYG{p}{()}
+\end{Verbatim}

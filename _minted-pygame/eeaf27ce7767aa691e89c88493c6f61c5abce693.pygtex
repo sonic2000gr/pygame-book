@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{screen}\PYG{o}{.}\PYG{n}{blit}\PYG{p}{(}\PYG{n}{thetext}\PYG{p}{,(}\PYG{n}{textx}\PYG{p}{,}\PYG{n}{texty}\PYG{p}{))}
+\end{Verbatim}

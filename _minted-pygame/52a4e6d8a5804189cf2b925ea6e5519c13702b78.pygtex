@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{k}{if} \PYG{n}{key}\PYG{p}{[}\PYG{n}{K\PYGZus{}SPACE}\PYG{p}{]:}
+          \PYG{k}{if} \PYG{n}{firelist}\PYG{p}{:}
+            \PYG{c}{\PYGZsh{} Only fire if last shot has travelled a minimum distance}
+            \PYG{k}{if} \PYG{n}{firelist}\PYG{p}{[}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{DistanceTravelled}\PYG{p}{()} \PYG{o}{\PYGZgt{}=}  \PYG{l+m+mi}{150}\PYG{p}{:}
+              \PYG{n}{firelist}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{SpaceShip}\PYG{o}{.}\PYG{n}{Fire}\PYG{p}{())}
+          \PYG{k}{else}\PYG{p}{:}
+            \PYG{c}{\PYGZsh{} or if there is no shot}
+            \PYG{n}{firelist}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{SpaceShip}\PYG{o}{.}\PYG{n}{Fire}\PYG{p}{())}
+\end{Verbatim}

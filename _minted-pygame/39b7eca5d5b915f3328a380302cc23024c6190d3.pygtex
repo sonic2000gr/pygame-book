@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{k}{if} \PYG{n}{guess} \PYG{o}{==} \PYG{n}{thenumber}\PYG{p}{:}
+    \PYG{k}{print} \PYG{l+s}{\PYGZdq{}Τον βρήκες!!!\PYGZdq{}}
+\end{Verbatim}

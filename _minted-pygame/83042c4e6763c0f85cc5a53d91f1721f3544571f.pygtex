@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{index} \PYG{o}{=} \PYG{l+m+mi}{0}
+  \PYG{k}{print} \PYG{l+s}{\PYGZdq{}Έξοδοι:\PYGZdq{}}\PYG{p}{,}
+  \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n}{destinations}\PYG{p}{:}
+    \PYG{k}{if} \PYG{n}{i}\PYG{o}{!=\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{:}
+      \PYG{k}{print} \PYG{n}{directions}\PYG{p}{[}\PYG{n}{index}\PYG{p}{],}
+      \PYG{n}{possiblemoves}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{directions}\PYG{p}{[}\PYG{n}{index}\PYG{p}{])}
+    \PYG{n}{index} \PYG{o}{+=}\PYG{l+m+mi}{1}
+\end{Verbatim}

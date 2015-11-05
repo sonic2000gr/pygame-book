@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{for} \PYG{n}{theshot} \PYG{o+ow}{in} \PYG{n}{firelist}\PYG{p}{:}
+      \PYG{n}{theshot}\PYG{o}{.}\PYG{n}{Move}\PYG{p}{(}\PYG{n}{time}\PYG{p}{)}
+      \PYG{n}{theshot}\PYG{o}{.}\PYG{n}{Show}\PYG{p}{(}\PYG{n}{screen}\PYG{p}{)}
+      \PYG{k}{if} \PYG{n}{theshot}\PYG{o}{.}\PYG{n}{GoneAbove}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{):}
+        \PYG{n}{firelist}\PYG{o}{.}\PYG{n}{remove}\PYG{p}{(}\PYG{n}{theshot}\PYG{p}{)}
+      \PYG{k}{else}\PYG{p}{:}
+        \PYG{k}{for} \PYG{n}{AlienShip} \PYG{o+ow}{in} \PYG{n}{AlienShips}\PYG{p}{:}
+          \PYG{k}{if} \PYG{n}{AlienShip}\PYG{o}{.}\PYG{n}{rect}\PYG{o}{.}\PYG{n}{collidepoint}\PYG{p}{(}\PYG{n}{theshot}\PYG{o}{.}\PYG{n}{GetXY}\PYG{p}{()):}
+            \PYG{n}{explosion}\PYG{o}{.}\PYG{n}{play}\PYG{p}{()}
+            \PYG{k}{if} \PYG{n}{theshot} \PYG{o+ow}{in} \PYG{n}{firelist}\PYG{p}{:}
+              \PYG{n}{firelist}\PYG{o}{.}\PYG{n}{remove}\PYG{p}{(}\PYG{n}{theshot}\PYG{p}{)}
+            \PYG{n}{AlienShips}\PYG{o}{.}\PYG{n}{remove}\PYG{p}{(}\PYG{n}{AlienShip}\PYG{p}{)}
+\end{Verbatim}

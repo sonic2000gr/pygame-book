@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{for} \PYG{n}{theball} \PYG{o+ow}{in} \PYG{n}{balls}\PYG{p}{:}
+      \PYG{n}{theball}\PYG{o}{.}\PYG{n}{Move}\PYG{p}{(}\PYG{n}{time}\PYG{p}{)}
+      \PYG{k}{if} \PYG{n}{theball}\PYG{o}{.}\PYG{n}{IsOutofX}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{640}\PYG{p}{):}
+        \PYG{n}{theball}\PYG{o}{.}\PYG{n}{xspeed} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{theball}\PYG{o}{.}\PYG{n}{xspeed}
+      \PYG{k}{if} \PYG{n}{theball}\PYG{o}{.}\PYG{n}{IsOutofY}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{480}\PYG{p}{):}
+        \PYG{n}{theball}\PYG{o}{.}\PYG{n}{yspeed} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{theball}\PYG{o}{.}\PYG{n}{yspeed}
+    \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{display}\PYG{o}{.}\PYG{n}{update}\PYG{p}{()}
+    \PYG{n}{endprogram} \PYG{o}{=} \PYG{n}{getQuit}\PYG{p}{()}
+
+  \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{quit}\PYG{p}{()}
+  \PYG{n+nb}{exit}\PYG{p}{()}
+
+\PYG{k}{if} \PYG{n}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+  \PYG{n}{main}\PYG{p}{()}
+\end{Verbatim}

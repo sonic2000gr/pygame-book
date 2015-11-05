@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{print} \PYG{l+s}{\PYGZdq{}Έχω σκεφτεί ένα αριθμό από το 1 ως το 50.\PYGZdq{}}
+\PYG{k}{print} \PYG{l+s}{\PYGZdq{}Μπορείς να τον βρεις;\PYGZdq{}}
+\end{Verbatim}

@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{Alien}\PYG{p}{(}\PYG{n}{Craft}\PYG{p}{):}
+  \PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{imagefile}\PYG{p}{,} \PYG{n}{coord}\PYG{p}{,} \PYG{n}{speed\PYGZus{}x}\PYG{p}{,} \PYG{n}{speed\PYGZus{}y}\PYG{p}{):}
+    \PYG{n+nb}{super}\PYG{p}{(}\PYG{n}{Alien}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{o}{.}\PYG{n}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n}{imagefile}\PYG{p}{,} \PYG{n}{coord}\PYG{p}{)}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{speed\PYGZus{}x} \PYG{o}{=} \PYG{n}{speed\PYGZus{}x}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{speed\PYGZus{}y} \PYG{o}{=} \PYG{n}{speed\PYGZus{}y}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shot\PYGZus{}height} \PYG{o}{=} \PYG{l+m+mi}{10}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{firebaseline} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{ship\PYGZus{}height}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{firecolor}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{)}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{firespeed} \PYG{o}{=} \PYG{l+m+mi}{200}
+  \PYG{k}{def} \PYG{n+nf}{Move}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{time}\PYG{p}{):}
+    \PYG{n+nb}{super}\PYG{p}{(}\PYG{n}{Alien}\PYG{p}{,}\PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{o}{.}\PYG{n}{Move}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{speed\PYGZus{}x}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{speed\PYGZus{}y}\PYG{p}{,}\PYG{n}{time}\PYG{p}{)}
+    \PYG{k}{if} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rect}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{\PYGZam{}}\PYG{n}{gt}\PYG{p}{;}\PYG{o}{=} \PYG{l+m+mi}{440} \PYG{o+ow}{or} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rect}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{\PYGZam{}}\PYG{n}{lt}\PYG{p}{;}\PYG{o}{=} \PYG{l+m+mi}{10}\PYG{p}{:}
+      \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{speed\PYGZus{}x} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{speed\PYGZus{}x}
+    \PYG{k}{if} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rect}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{\PYGZam{}}\PYG{n}{lt}\PYG{p}{;}\PYG{o}{=} \PYG{l+m+mi}{10} \PYG{o+ow}{or} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rect}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{\PYGZam{}}\PYG{n}{gt}\PYG{p}{;}\PYG{o}{=} \PYG{l+m+mi}{440}\PYG{p}{:}
+      \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{speed\PYGZus{}y} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{speed\PYGZus{}y}
+\end{Verbatim}

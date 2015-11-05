@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{For} \PYG{n}{AlienShip} \PYG{o+ow}{in} \PYG{n}{AlienShips}\PYG{p}{:}
+      \PYG{n}{AlienShip}\PYG{o}{.}\PYG{n}{Show}\PYG{p}{(}\PYG{n}{screen}\PYG{p}{)}
+      \PYG{n}{AlienShip}\PYG{o}{.}\PYG{n}{Move}\PYG{p}{(}\PYG{n}{time}\PYG{p}{)}
+\end{Verbatim}

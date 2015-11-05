@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{getInput}\PYG{p}{(}\PYG{n}{moves}\PYG{p}{,}\PYG{n}{room}\PYG{p}{):}
+  \PYG{n}{directions} \PYG{o}{=} \PYG{p}{[}\PYG{l+s}{\PYGZdq{}Βόρεια\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}Νότια\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}Ανατολικά\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}Δυτικά\PYGZdq{}}\PYG{p}{]}
+  \PYG{n}{destinations} \PYG{o}{=} \PYG{n}{moves}\PYG{p}{[}\PYG{n}{room}\PYG{p}{]}
+  \PYG{n}{possiblemoves} \PYG{o}{=} \PYG{p}{[]}
+  \PYG{n}{index} \PYG{o}{=} \PYG{l+m+mi}{0}
+  \PYG{k}{print} \PYG{l+s}{\PYGZdq{}Έξοδοι:\PYGZdq{}}\PYG{p}{,}
+  \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n}{destinations}\PYG{p}{:}
+    \PYG{k}{if} \PYG{n}{i}\PYG{o}{!=\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{:}
+      \PYG{k}{print} \PYG{n}{directions}\PYG{p}{[}\PYG{n}{index}\PYG{p}{],}
+      \PYG{n}{possiblemoves}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{directions}\PYG{p}{[}\PYG{n}{index}\PYG{p}{])}
+    \PYG{n}{index} \PYG{o}{+=}\PYG{l+m+mi}{1}
+  \PYG{k}{print} \PYG{l+s}{\PYGZdq{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s}{\PYGZdq{}}
+  \PYG{n}{userinput}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}
+  \PYG{k}{while} \PYG{n}{userinput} \PYG{o+ow}{not} \PYG{o+ow}{in} \PYG{n}{possiblemoves}\PYG{p}{:}
+    \PYG{n}{userinput}\PYG{o}{=}\PYG{n+nb}{raw\PYGZus{}input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Που θες να πας; \PYGZdq{}}\PYG{p}{)}
+  \PYG{k}{return} \PYG{n}{directions}\PYG{o}{.}\PYG{n}{index}\PYG{p}{(}\PYG{n}{userinput}\PYG{p}{)}
+\end{Verbatim}

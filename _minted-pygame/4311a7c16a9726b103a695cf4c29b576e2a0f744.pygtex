@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{SpaceShip}\PYG{o}{.}\PYG{n}{Move}\PYG{p}{(}\PYG{n}{shipspeed\PYGZus{}x}\PYG{p}{,} \PYG{n}{shipspeed\PYGZus{}y}\PYG{p}{,} \PYG{n}{time}\PYG{p}{)}
+    \PYG{n}{StarField}\PYG{o}{.}\PYG{n}{Show}\PYG{p}{(}\PYG{n}{screen}\PYG{p}{)}
+    \PYG{n}{SpaceShip}\PYG{o}{.}\PYG{n}{Show}\PYG{p}{(}\PYG{n}{screen}\PYG{p}{)}
+    \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{display}\PYG{o}{.}\PYG{n}{update}\PYG{p}{()}
+\end{Verbatim}

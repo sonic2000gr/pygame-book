@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{thetext} \PYG{o}{=} \PYG{n}{textfont}\PYG{o}{.}\PYG{n}{render}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Hello Pygame!\PYGZdq{}}\PYG{p}{,} \PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{p}{(}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{),(}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{))}
+\end{Verbatim}

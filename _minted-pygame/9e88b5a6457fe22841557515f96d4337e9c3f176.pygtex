@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{n}{key} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{key}\PYG{o}{.}\PYG{n}{get\PYGZus{}pressed}\PYG{p}{()}
+        \PYG{k}{if} \PYG{n}{key}\PYG{p}{[}\PYG{n}{K\PYGZus{}q}\PYG{p}{]:}
+          \PYG{o}{....} \PYG{p}{(}\PYG{err}{ο} \PYG{err}{παίκτης} \PYG{err}{βαρέθηκε} \PYG{err}{το} \PYG{err}{παιχνίδι}\PYG{p}{)}
+\end{Verbatim}

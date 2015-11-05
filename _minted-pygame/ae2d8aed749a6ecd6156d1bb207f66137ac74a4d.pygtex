@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{k}{if} \PYG{n}{key}\PYG{p}{[}\PYG{n}{K\PYGZus{}UP}\PYG{p}{]:}
+          \PYG{n}{shipspeed\PYGZus{}y} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{300}
+        \PYG{k}{if} \PYG{n}{key}\PYG{p}{[}\PYG{n}{K\PYGZus{}DOWN}\PYG{p}{]:}
+          \PYG{n}{shipspeed\PYGZus{}y} \PYG{o}{=} \PYG{l+m+mi}{300}
+\end{Verbatim}

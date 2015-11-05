@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{k}{while} \PYG{n+nb+bp}{True}\PYG{p}{:}
+    \PYG{n}{time} \PYG{o}{=} \PYG{n}{clock}\PYG{o}{.}\PYG{n}{tick}\PYG{p}{(}\PYG{n}{framerate}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mf}{1000.0}
+    \PYG{n}{shipspeed\PYGZus{}x} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{n}{shipspeed\PYGZus{}y} \PYG{o}{=} \PYG{l+m+mi}{0}
+\end{Verbatim}

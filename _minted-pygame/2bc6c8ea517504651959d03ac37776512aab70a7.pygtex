@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{mammal}\PYG{p}{:}
+  \PYG{k}{def} \PYG{n+nf}{speak}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+    \PYG{k}{print} \PYG{l+s}{\PYGZdq{}Mpla mpla!\PYGZdq{}}
+\end{Verbatim}

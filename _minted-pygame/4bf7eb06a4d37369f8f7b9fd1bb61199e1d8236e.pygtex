@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{k}{print} \PYG{n}{age}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}is not too bad!\PYGZdq{}}
+\PYG{l+m+mi}{24} \PYG{o+ow}{is} \PYG{o+ow}{not} \PYG{n}{too} \PYG{n}{bad}\PYG{err}{!}
+\end{Verbatim}

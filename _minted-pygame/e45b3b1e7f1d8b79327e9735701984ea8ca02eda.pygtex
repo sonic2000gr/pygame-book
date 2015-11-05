@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{init}\PYG{p}{()}
+  \PYG{n}{screenwidth}\PYG{p}{,}\PYG{n}{screenheight} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{480}\PYG{p}{,}\PYG{l+m+mi}{640}\PYG{p}{)}
+\end{Verbatim}

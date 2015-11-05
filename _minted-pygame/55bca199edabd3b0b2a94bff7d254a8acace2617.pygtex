@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{main}\PYG{p}{():}
+  \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{init}\PYG{p}{()}
+\end{Verbatim}

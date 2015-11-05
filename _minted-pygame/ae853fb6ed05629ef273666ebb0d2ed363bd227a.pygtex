@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{GameOverShow}\PYG{p}{(}\PYG{n}{screen}\PYG{p}{):}
+  \PYG{n}{font} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{font}\PYG{o}{.}\PYG{n}{SysFont}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}impact\PYGZdq{}}\PYG{p}{,} \PYG{l+m+mi}{32}\PYG{p}{)}
+  \PYG{n}{gameovertext} \PYG{o}{=} \PYG{n}{font}\PYG{o}{.}\PYG{n}{render}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Game Over!\PYGZdq{}}\PYG{p}{,}\PYG{n+nb+bp}{True}\PYG{p}{,(}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{255}\PYG{p}{))}
+  \PYG{n}{text\PYGZus{}x} \PYG{o}{=} \PYG{n}{CenterMessage}\PYG{p}{(}\PYG{n}{screen}\PYG{p}{,} \PYG{n}{gameovertext}\PYG{p}{)}
+  \PYG{n}{screen}\PYG{o}{.}\PYG{n}{blit} \PYG{p}{(}\PYG{n}{gameovertext}\PYG{p}{,(}\PYG{n}{text\PYGZus{}x}\PYG{p}{,}\PYG{l+m+mi}{280}\PYG{p}{))}
+  \PYG{n}{gameovertext} \PYG{o}{=} \PYG{n}{font}\PYG{o}{.}\PYG{n}{render}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Press R to Restart\PYGZdq{}}\PYG{p}{,} \PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{p}{(}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{255}\PYG{p}{))}
+  \PYG{n}{text\PYGZus{}x} \PYG{o}{=} \PYG{n}{CenterMessage}\PYG{p}{(}\PYG{n}{screen}\PYG{p}{,} \PYG{n}{gameovertext}\PYG{p}{)}
+  \PYG{n}{screen}\PYG{o}{.}\PYG{n}{blit}\PYG{p}{(}\PYG{n}{gameovertext}\PYG{p}{,(}\PYG{n}{text\PYGZus{}x}\PYG{p}{,}\PYG{l+m+mi}{320}\PYG{p}{))}
+  \PYG{k}{return}
+\end{Verbatim}

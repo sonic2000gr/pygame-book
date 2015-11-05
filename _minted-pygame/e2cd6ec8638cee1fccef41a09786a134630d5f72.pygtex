@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{balls}\PYG{o}{=}\PYG{p}{[]}
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{8}\PYG{p}{):}
+  \PYG{n}{balls}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{Ball}\PYG{p}{(}\PYG{n}{ballimage}\PYG{p}{,}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,}\PYG{n}{xspeed}\PYG{p}{,}\PYG{n}{yspeed}\PYG{p}{))}
+\end{Verbatim}

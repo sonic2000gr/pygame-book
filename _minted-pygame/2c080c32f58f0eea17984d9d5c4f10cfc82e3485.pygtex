@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{k}{def} \PYG{n+nf}{Show}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{surface}\PYG{p}{):}
+    \PYG{k}{if} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{currentvalue} \PYG{o}{\PYGZlt{}} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{warnvalue}\PYG{p}{:}
+      \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shieldcolor} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{)}
+    \PYG{k}{else}\PYG{p}{:}
+      \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shieldcolor} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{)}
+    \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{draw}\PYG{o}{.}\PYG{n}{rect}\PYG{p}{(}\PYG{n}{surface}\PYG{p}{,}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shieldcolor}\PYG{p}{,(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{x}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{y}\PYG{p}{,}  \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{currentvalue}\PYG{p}{,}\PYG{l+m+mi}{25}\PYG{p}{))}
+\end{Verbatim}

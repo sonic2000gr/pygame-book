@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{imagefiles} \PYG{o}{=} \PYG{p}{(}\PYG{n}{imagefile}\PYG{p}{,)}
+\end{Verbatim}

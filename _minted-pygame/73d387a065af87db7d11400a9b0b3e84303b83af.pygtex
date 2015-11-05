@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{windowsize} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{320}\PYG{p}{,}\PYG{l+m+mi}{140}\PYG{p}{)}
+\end{Verbatim}

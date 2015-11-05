@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{PrepareSound}\PYG{p}{(}\PYG{n}{filename}\PYG{p}{):}
+  \PYG{n}{sound} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{mixer}\PYG{o}{.}\PYG{n}{Sound}\PYG{p}{(}\PYG{n}{filename}\PYG{p}{)}
+  \PYG{k}{return} \PYG{n}{sound}
+\end{Verbatim}

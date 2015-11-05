@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{Craft}\PYG{p}{(}\PYG{n+nb}{object}\PYG{p}{):}
+  \PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}} \PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{imagefile}\PYG{p}{,} \PYG{n}{coord}\PYG{p}{):}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shape} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{image}\PYG{o}{.}\PYG{n}{load}\PYG{p}{(}\PYG{n}{imagefile}\PYG{p}{)}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{ship\PYGZus{}width} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shape}\PYG{o}{.}\PYG{n}{get\PYGZus{}width}\PYG{p}{()}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{ship\PYGZus{}height} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shape}\PYG{o}{.}\PYG{n}{get\PYGZus{}height}\PYG{p}{()}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rect} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{Rect}\PYG{p}{(}\PYG{n}{coord}\PYG{p}{,(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{ship\PYGZus{}width}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{ship\PYGZus{}height}\PYG{p}{))}
+
+  \PYG{k}{def} \PYG{n+nf}{Show}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{surface}\PYG{p}{):}
+    \PYG{n}{surface}\PYG{o}{.}\PYG{n}{blit}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{,(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rect}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{],}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rect}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]))}
+
+  \PYG{k}{def} \PYG{n+nf}{Move}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,}\PYG{n}{speed\PYGZus{}x}\PYG{p}{,}\PYG{n}{speed\PYGZus{}y}\PYG{p}{,} \PYG{n}{time}\PYG{p}{):}
+    \PYG{n}{distance\PYGZus{}x} \PYG{o}{=} \PYG{n}{speed\PYGZus{}x} \PYG{o}{*} \PYG{n}{time}
+    \PYG{n}{distance\PYGZus{}y} \PYG{o}{=} \PYG{n}{speed\PYGZus{}y} \PYG{o}{*} \PYG{n}{time}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rect}\PYG{o}{.}\PYG{n}{move\PYGZus{}ip}\PYG{p}{(}\PYG{n}{distance\PYGZus{}x}\PYG{p}{,}\PYG{n}{distance\PYGZus{}y}\PYG{p}{)}
+
+  \PYG{k}{def} \PYG{n+nf}{Fire}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+    \PYG{k}{pass}
+\end{Verbatim}

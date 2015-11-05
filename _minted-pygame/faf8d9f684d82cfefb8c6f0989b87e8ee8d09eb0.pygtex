@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{shoppinglist} \PYG{o}{=} \PYG{p}{[} \PYG{l+s}{\PYGZdq{}Cheese\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}Rice\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}Coffee\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}Milk\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}Camba\PYGZdq{}} \PYG{p}{]}
+\PYG{n}{element} \PYG{o}{=} \PYG{n+nb}{raw\PYGZus{}input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}What are you buying today? \PYGZdq{}}\PYG{p}{)}
+\PYG{k}{if} \PYG{n}{element} \PYG{o+ow}{in} \PYG{n}{shoppinglist}\PYG{p}{:}
+  \PYG{k}{print} \PYG{l+s}{\PYGZdq{}Yes, this is on the list\PYGZdq{}}
+\PYG{k}{else}\PYG{p}{:}
+  \PYG{k}{print} \PYG{l+s}{\PYGZdq{}Not on the list, you don\PYGZsq{}t need it\PYGZdq{}}
+\end{Verbatim}

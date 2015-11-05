@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{textx} \PYG{o}{=} \PYG{n}{centerMessage}\PYG{p}{(}\PYG{n}{thetext}\PYG{p}{)}
+  \PYG{n}{texty} \PYG{o}{=} \PYG{l+m+mi}{40}
+\end{Verbatim}

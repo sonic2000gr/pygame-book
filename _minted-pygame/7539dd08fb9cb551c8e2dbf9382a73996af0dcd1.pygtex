@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{c}{\PYGZsh{} Set the background scrolling speed}
+
+  \PYG{n}{backspeed} \PYG{o}{=} \PYG{l+m+mi}{100}
+\end{Verbatim}

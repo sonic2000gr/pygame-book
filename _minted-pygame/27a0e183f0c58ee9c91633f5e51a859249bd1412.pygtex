@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+       \PYG{k}{if} \PYG{n}{SpaceShip}\PYG{o}{.}\PYG{n}{rect}\PYG{o}{.}\PYG{n}{collidepoint}\PYG{p}{(}\PYG{n}{theshot}\PYG{o}{.}\PYG{n}{GetXY}\PYG{p}{()):}
+         \PYG{n}{destroyed}\PYG{o}{.}\PYG{n}{play}\PYG{p}{()}
+         \PYG{n}{shield}\PYG{o}{.}\PYG{n}{Decrease}\PYG{p}{(}\PYG{l+m+mi}{25}\PYG{p}{)}
+\end{Verbatim}

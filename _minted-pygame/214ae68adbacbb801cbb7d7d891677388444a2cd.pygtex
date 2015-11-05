@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{endprogram} \PYG{o}{=} \PYG{n+nb+bp}{False}
+
+  \PYG{k}{while} \PYG{o+ow}{not} \PYG{n}{endprogram}\PYG{p}{:}
+    \PYG{n}{screen}\PYG{o}{.}\PYG{n}{fill}\PYG{p}{(}\PYG{n}{surfacecolor}\PYG{p}{)}
+    \PYG{n}{screen}\PYG{o}{.}\PYG{n}{blit}\PYG{p}{(}\PYG{n}{thetext}\PYG{p}{,(}\PYG{n}{textx}\PYG{p}{,}\PYG{n}{texty}\PYG{p}{))}
+    \PYG{n}{endprogram} \PYG{o}{=} \PYG{n}{getQuit}\PYG{p}{()}
+    \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{display}\PYG{o}{.}\PYG{n}{update}\PYG{p}{()}
+
+  \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{quit}\PYG{p}{()}
+  \PYG{n+nb}{exit}\PYG{p}{()}
+\end{Verbatim}

@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+          \PYG{k}{if} \PYG{n}{AlienShip}\PYG{o}{.}\PYG{n}{rect}\PYG{o}{.}\PYG{n}{collidepoint}\PYG{p}{(}\PYG{n}{theshot}\PYG{o}{.}\PYG{n}{GetXY}\PYG{p}{()):}
+            \PYG{n}{score}\PYG{o}{.}\PYG{n}{Change}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
+            \PYG{n}{explosion}\PYG{o}{.}\PYG{n}{play}\PYG{p}{()}
+            \PYG{k}{if} \PYG{n}{score}\PYG{o}{.}\PYG{n}{GetValue}\PYG{p}{()} \PYG{o}{\PYGZpc{}} \PYG{l+m+mi}{100} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{:}
+              \PYG{n}{shield}\PYG{o}{.}\PYG{n}{Increase}\PYG{p}{(}\PYG{l+m+mi}{25}\PYG{p}{)}
+\end{Verbatim}

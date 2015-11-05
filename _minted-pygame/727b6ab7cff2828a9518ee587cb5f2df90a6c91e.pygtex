@@ -1,0 +1,31 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{c}{\PYGZsh{}}
+  \PYG{c}{\PYGZsh{} Main loop}
+  \PYG{c}{\PYGZsh{}}
+
+  \PYG{n}{endprogram} \PYG{o}{=} \PYG{n+nb+bp}{False}
+  \PYG{k}{while} \PYG{o+ow}{not} \PYG{n}{endprogram}\PYG{p}{:}
+    \PYG{n}{screen}\PYG{o}{.}\PYG{n}{fill}\PYG{p}{(}\PYG{n}{surfacecolor}\PYG{p}{)}
+    \PYG{n}{screen}\PYG{o}{.}\PYG{n}{blit}\PYG{p}{(}\PYG{n}{ball}\PYG{p}{,} \PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{))}
+    \PYG{n}{time} \PYG{o}{=} \PYG{n}{clock}\PYG{o}{.}\PYG{n}{tick}\PYG{p}{()}
+    \PYG{n}{thetext} \PYG{o}{=} \PYG{n}{textfont}\PYG{o}{.}\PYG{n}{render}\PYG{p}{(}\PYG{n+nb}{str}\PYG{p}{(}\PYG{l+m+mi}{1000}\PYG{o}{/}\PYG{n}{time}\PYG{p}{),} \PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{p}{(}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{),(}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{))}
+    \PYG{n}{screen}\PYG{o}{.}\PYG{n}{blit}\PYG{p}{(}\PYG{n}{thetext}\PYG{p}{,(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{))}
+    \PYG{n}{time} \PYG{o}{=} \PYG{n}{time} \PYG{o}{/} \PYG{l+m+mf}{1000.0}
+    \PYG{n}{distance\PYGZus{}x} \PYG{o}{=} \PYG{n}{time} \PYG{o}{*} \PYG{n}{xspeed}
+    \PYG{n}{distance\PYGZus{}y} \PYG{o}{=} \PYG{n}{time} \PYG{o}{*} \PYG{n}{yspeed}
+    \PYG{n}{x} \PYG{o}{=} \PYG{n}{x} \PYG{o}{+} \PYG{n}{distance\PYGZus{}x}
+    \PYG{n}{y} \PYG{o}{=} \PYG{n}{y} \PYG{o}{+} \PYG{n}{distance\PYGZus{}y}
+
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{x} \PYG{o}{\PYGZgt{}} \PYG{p}{(}\PYG{l+m+mf}{640.0}\PYG{o}{\PYGZhy{}}\PYG{n}{ballwidth}\PYG{p}{)} \PYG{o+ow}{or} \PYG{n}{x}\PYG{o}{\PYGZlt{}=}\PYG{l+m+mf}{0.0}\PYG{p}{):}
+      \PYG{n}{xspeed} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{xspeed}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{y} \PYG{o}{\PYGZgt{}} \PYG{p}{(}\PYG{l+m+mf}{480.0}\PYG{o}{\PYGZhy{}}\PYG{n}{ballheight}\PYG{p}{)} \PYG{o+ow}{or} \PYG{n}{y}\PYG{o}{\PYGZlt{}=}\PYG{l+m+mf}{0.0}\PYG{p}{):}
+      \PYG{n}{yspeed} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{yspeed}
+    \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{display}\PYG{o}{.}\PYG{n}{update}\PYG{p}{()}
+    \PYG{n}{endprogram} \PYG{o}{=} \PYG{n}{getQuit}\PYG{p}{()}
+
+  \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{quit}\PYG{p}{()}
+  \PYG{n+nb}{exit}\PYG{p}{()}
+
+\PYG{k}{if} \PYG{n}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+  \PYG{n}{main}\PYG{p}{()}
+\end{Verbatim}

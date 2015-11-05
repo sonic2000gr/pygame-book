@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{k}{if} \PYG{n}{key}\PYG{p}{[}\PYG{n}{K\PYGZus{}q}\PYG{p}{]:}
+          \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{quit}\PYG{p}{()}
+          \PYG{n+nb}{exit}\PYG{p}{()}
+        \PYG{k}{if} \PYG{n}{key}\PYG{p}{[}\PYG{n}{K\PYGZus{}LEFT}\PYG{p}{]:}
+          \PYG{n}{shipspeed\PYGZus{}x} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{300}
+        \PYG{k}{if} \PYG{n}{key}\PYG{p}{[}\PYG{n}{K\PYGZus{}RIGHT}\PYG{p}{]:}
+          \PYG{n}{shipspeed\PYGZus{}x} \PYG{o}{=} \PYG{l+m+mi}{300}
+\end{Verbatim}

@@ -1,0 +1,28 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZsh{}}
+\PYG{c}{\PYGZsh{} pygame hello world}
+\PYG{c}{\PYGZsh{}}
+\PYG{c}{\PYGZsh{} Όχι, δεν είναι τόσο πολύπλοκο όσο φαίνεται.}
+\PYG{c}{\PYGZsh{} Μην πέσετε από το μπαλκόνι!}
+\PYG{c}{\PYGZsh{}}
+\PYG{k+kn}{import} \PYG{n+nn}{pygame}
+\PYG{k+kn}{from} \PYG{n+nn}{pygame.locals} \PYG{k+kn}{import} \PYG{o}{*}
+\PYG{k+kn}{from} \PYG{n+nn}{sys} \PYG{k+kn}{import} \PYG{n+nb}{exit}
+
+\PYG{c}{\PYGZsh{} Define app window width and height}
+
+\PYG{n}{windowsize} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{320}\PYG{p}{,}\PYG{l+m+mi}{140}\PYG{p}{)}
+
+\PYG{k}{def} \PYG{n+nf}{centerMessage}\PYG{p}{(}\PYG{n}{surface}\PYG{p}{):}
+  \PYG{k}{return} \PYG{p}{(}\PYG{n}{windowsize}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{\PYGZhy{}} \PYG{n}{surface}\PYG{o}{.}\PYG{n}{get\PYGZus{}width}\PYG{p}{())}\PYG{o}{/}\PYG{l+m+mi}{2}
+
+\PYG{c}{\PYGZsh{}}
+\PYG{c}{\PYGZsh{} Process the event queue}
+\PYG{c}{\PYGZsh{} returns true if user clicks close}
+\PYG{c}{\PYGZsh{}}
+
+\PYG{k}{def} \PYG{n+nf}{getQuit}\PYG{p}{():}
+  \PYG{k}{for} \PYG{n}{event} \PYG{o+ow}{in} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{event}\PYG{o}{.}\PYG{n}{get}\PYG{p}{():}
+    \PYG{k}{if} \PYG{n}{event}\PYG{o}{.}\PYG{n}{type} \PYG{o}{==} \PYG{n}{QUIT}\PYG{p}{:}
+      \PYG{k}{return} \PYG{n+nb+bp}{True}
+\end{Verbatim}

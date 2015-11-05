@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{time} \PYG{o}{=} \PYG{n}{clock}\PYG{o}{.}\PYG{n}{tick}\PYG{p}{()}
+\end{Verbatim}

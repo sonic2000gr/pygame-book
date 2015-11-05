@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{SpaceBackground}\PYG{p}{:}
+  \PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{screenheight}\PYG{p}{,} \PYG{n}{imagefile}\PYG{p}{):}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shape} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{image}\PYG{o}{.}\PYG{n}{load}\PYG{p}{(}\PYG{n}{imagefile}\PYG{p}{)}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{coord} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{coord2} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{n}{screenheight}\PYG{p}{]}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{y\PYGZus{}original} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{coord}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{y2\PYGZus{}original} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{coord2}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}
+\end{Verbatim}

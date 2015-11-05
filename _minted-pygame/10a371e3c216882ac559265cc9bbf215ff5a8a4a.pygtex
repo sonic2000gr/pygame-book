@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{collision} \PYG{o}{=} \PYG{n}{AlienShip}\PYG{o}{.}\PYG{n}{rect}\PYG{o}{.}\PYG{n}{collidepoint}\PYG{p}{((}\PYG{l+m+mi}{120}\PYG{p}{,}\PYG{l+m+mi}{248}\PYG{p}{))}
+\end{Verbatim}

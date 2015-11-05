@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{for} \PYG{n}{element} \PYG{o+ow}{in} \PYG{n}{shoppinglist}\PYG{p}{:}
+  \PYG{k}{print} \PYG{n}{element}
+\end{Verbatim}

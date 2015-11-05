@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{imageindex} \PYG{o}{=} \PYG{l+m+mi}{0}
+  \PYG{n}{flashcount} \PYG{o}{=} \PYG{l+m+mi}{0}
+\end{Verbatim}

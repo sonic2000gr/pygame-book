@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{SpaceCraft}\PYG{p}{(}\PYG{n}{Craft}\PYG{p}{):}
+  \PYG{k}{pass}
+\end{Verbatim}

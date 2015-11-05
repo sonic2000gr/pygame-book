@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{userinput}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}
+  \PYG{k}{while} \PYG{n}{userinput} \PYG{o+ow}{not} \PYG{o+ow}{in} \PYG{n}{possiblemoves}\PYG{p}{:}
+    \PYG{n}{userinput}\PYG{o}{=}\PYG{n+nb}{raw\PYGZus{}input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Που θες να πας; \PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

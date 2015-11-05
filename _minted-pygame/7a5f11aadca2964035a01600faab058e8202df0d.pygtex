@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{mytext} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}I really love Python programming\PYGZdq{}}
+\PYG{n}{centerText}\PYG{p}{(}\PYG{n}{mytext}\PYG{p}{)}
+\end{Verbatim}

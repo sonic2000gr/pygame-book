@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{k}{def} \PYG{n+nf}{GoneAbove}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,}\PYG{n}{y}\PYG{p}{):}
+    \PYG{k}{if} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{y1}\PYG{o}{\PYGZlt{}=}\PYG{n}{y}\PYG{p}{:}
+      \PYG{k}{return} \PYG{n+nb+bp}{True}
+    \PYG{k}{else}\PYG{p}{:}
+      \PYG{k}{return} \PYG{n+nb+bp}{False}
+\end{Verbatim}

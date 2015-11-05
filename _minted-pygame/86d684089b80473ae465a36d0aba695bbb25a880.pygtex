@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{textfont} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{font}\PYG{o}{.}\PYG{n}{SysFont}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Arial\PYGZdq{}}\PYG{p}{,}\PYG{l+m+mi}{48}\PYG{p}{)}
+\end{Verbatim}

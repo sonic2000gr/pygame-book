@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{Ball}\PYG{p}{:}
+  \PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,}\PYG{n}{theImage}\PYG{p}{,}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,}\PYG{n}{xspeed}\PYG{p}{,}\PYG{n}{yspeed}\PYG{p}{):}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{ballimage} \PYG{o}{=} \PYG{n}{theImage}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{x} \PYG{o}{=} \PYG{n}{x}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{y} \PYG{o}{=} \PYG{n}{y}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{xspeed} \PYG{o}{=} \PYG{n}{xspeed}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{yspeed} \PYG{o}{=} \PYG{n}{yspeed}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shape} \PYG{o}{=} \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{image}\PYG{o}{.}\PYG{n}{load}\PYG{p}{(}\PYG{n}{theImage}\PYG{p}{)}
+
+  \PYG{k}{def} \PYG{n+nf}{Show}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,}\PYG{n}{surface}\PYG{p}{):}
+    \PYG{n}{surface}\PYG{o}{.}\PYG{n}{blit}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{,} \PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{x}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{y}\PYG{p}{))}
+\end{Verbatim}

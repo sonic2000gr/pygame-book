@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{x2} \PYG{o}{\PYGZgt{}} \PYG{p}{(}\PYG{l+m+mf}{640.0}\PYG{o}{\PYGZhy{}}\PYG{n}{ballwidth}\PYG{p}{)} \PYG{o+ow}{or} \PYG{n}{x2}\PYG{o}{\PYGZlt{}=}\PYG{l+m+mf}{0.0}\PYG{p}{):}
+      \PYG{n}{xspeed2} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{xspeed2}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{y2} \PYG{o}{\PYGZgt{}} \PYG{p}{(}\PYG{l+m+mf}{480.0}\PYG{o}{\PYGZhy{}}\PYG{n}{ballheight}\PYG{p}{)} \PYG{o+ow}{or} \PYG{n}{y2}\PYG{o}{\PYGZlt{}=}\PYG{l+m+mf}{0.0}\PYG{p}{):}
+      \PYG{n}{yspeed2} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{yspeed2}
+
+    \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{display}\PYG{o}{.}\PYG{n}{update}\PYG{p}{()}
+    \PYG{n}{endprogram} \PYG{o}{=} \PYG{n}{getQuit}\PYG{p}{()}
+
+  \PYG{n}{pygame}\PYG{o}{.}\PYG{n}{quit}\PYG{p}{()}
+  \PYG{n+nb}{exit}\PYG{p}{()}
+\end{Verbatim}

@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+      \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{n}{numofaliens}\PYG{p}{):}
+        \PYG{n}{Alienships}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{Alien}\PYG{p}{(}\PYG{n}{alienimage}\PYG{p}{[}\PYG{n}{randint}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{alienimage}\PYG{p}{)}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)],}
+                          \PYG{p}{[}\PYG{n}{randint}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{,}\PYG{n}{screenwidth}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{80}\PYG{p}{),}
+                           \PYG{n}{randint}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{,}\PYG{n}{screenheight}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{140}\PYG{p}{)],}\PYG{n}{randint}\PYG{p}{(}\PYG{l+m+mi}{100}\PYG{p}{,}\PYG{l+m+mi}{150}\PYG{p}{),}
+                           \PYG{n}{randint}\PYG{p}{(}\PYG{l+m+mi}{100}\PYG{p}{,}\PYG{l+m+mi}{150}\PYG{p}{)))}
+\end{Verbatim}

@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{cube}\PYG{p}{(}\PYG{n}{thenumber}\PYG{p}{):}
+  \PYG{k}{return} \PYG{n}{thenumber}\PYG{o}{**}\PYG{l+m+mi}{3}
+\end{Verbatim}
